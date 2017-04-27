@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coffee</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="coffeHouse.css">
+</head>
+<body>
+<form>
+	<input type="Text" id="brand">
+	<button type="button" onclick="show();">Áruk névsora!</button>
+
+	<button type="button" onclick="list();">Készlethiány?</button>
+
+	<button type="button" onclick="strength();">Erősorrend:</button>
+
+	<button type="button" onclick="country();">Országok szerinti sorrend:</button>
+	<button type="button" onclick="priceMin();">Legolcsóbb kávé:</button>
+	<button type="button" onclick="priceMax();">Legdrágább kávé:</button>
+	<button type="button" onclick="priceAtlag();">Kávék árának átlaga:</button>
+	<button type="button" onclick="coffeValue();">Kávé össz értéke</button>
+	
+	<button type="submit">Törölj!</button>
+</form>
+
+<p id="place"></p>
+<p id="place2"></p>
+<div id="country"></div>
+<table id="table1" hidden>
+	<thead>
+		<tr>
+			<th>Ligth:1-3</th>
+			<th>Medium:4-7</th>
+			<th>Strong:8-10</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td id="td1"></td>
+			<td id="td2"></td>
+			<td id="td3"></td>
+		</tr>
+	</tbody>
+</table>
+<table  id="table2" hidden>
+	<thead>
+		<tr >
+			<th colspan="5">Országok</th>
+		</tr>
+		<tr>
+			<th>Brazilia</th>
+			<th>Germany</th>
+			<th>Switzerland</th>
+			<th>India</th>
+			<th>Ivory Coast</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		<tr id=row1>
+			<td id="td4"></td>
+			<td id="td5"></td>
+			<td id="td6"></td>
+			<td id="td7"></td>
+			<td id="td8"></td>
+		</tr>
+	</tbody>
+</table>
+
+<div id="min" hidden>Legolcsóbb Kávé: </div>
+<div id="max" hidden>Legdrágább Kávé: </div>
+<div id="atlag" hidden>A Kávéárak átlaga: </div>
+
+<div id="coffestore" hidden>Kávék Összértéke márkánként:<p id="coffeValue"></p></div>
+
+<script type="text/javascript" src="coffeHouse.js"></script>
+</body>
+</html>
